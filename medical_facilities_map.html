@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9ebadacf2cc56f239835d476901d5c6a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9ebadacf2cc56f239835d476901d5c6a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9ebadacf2cc56f239835d476901d5c6a = L.map(
+                "map_9ebadacf2cc56f239835d476901d5c6a",
+                {
+                    center: [19.341895, 72.818914],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_056756130f40a85dc8f2c5474016942e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_056756130f40a85dc8f2c5474016942e.addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var marker_01d4b6c3888f271773dbb91cb17420c1 = L.marker(
+                [19.341895, 72.818914],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_caa17c0c51e2ae5d77234df68d632ba9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_01d4b6c3888f271773dbb91cb17420c1.setIcon(icon_caa17c0c51e2ae5d77234df68d632ba9);
+        
+    
+        var popup_0853cfa5ecb41ce6f04fe32e3d467082 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8851515bfc032f6e10da1091b249c7d4 = $(`<div id="html_8851515bfc032f6e10da1091b249c7d4" style="width: 100.0%; height: 100.0%;">Your Location</div>`)[0];
+                popup_0853cfa5ecb41ce6f04fe32e3d467082.setContent(html_8851515bfc032f6e10da1091b249c7d4);
+            
+        
+
+        marker_01d4b6c3888f271773dbb91cb17420c1.bindPopup(popup_0853cfa5ecb41ce6f04fe32e3d467082)
+        ;
+
+        
+    
+    
+            var marker_98583276105fe643b0d50183ae6b397b = L.marker(
+                [19.34266, 72.82583],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_e0e97f72168b1595b13ae785eccb7321 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_98583276105fe643b0d50183ae6b397b.setIcon(icon_e0e97f72168b1595b13ae785eccb7321);
+        
+    
+        var popup_d768b8fbfc05ee120f4df53f19d1747e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cacb471da17f66af39e53f3db08a3282 = $(`<div id="html_cacb471da17f66af39e53f3db08a3282" style="width: 100.0%; height: 100.0%;">                 <b>Dr Sonali V Rane</b><br>                 Type: Doctor<br>                 Distance: 0.73 km<br>                 Address: Dr Sonali V Rane, Naigaon Papdi Road, Parnaka, Naigaon West, Vasai 401207, India<br>             </div>`)[0];
+                popup_d768b8fbfc05ee120f4df53f19d1747e.setContent(html_cacb471da17f66af39e53f3db08a3282);
+            
+        
+
+        marker_98583276105fe643b0d50183ae6b397b.bindPopup(popup_d768b8fbfc05ee120f4df53f19d1747e)
+        ;
+
+        
+    
+    
+            var marker_3e2491402a1bd78dca588a01ccbe767f = L.marker(
+                [19.36608, 72.81448],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_56005a79c60cbbd37508b2a07169f2d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e2491402a1bd78dca588a01ccbe767f.setIcon(icon_56005a79c60cbbd37508b2a07169f2d4);
+        
+    
+        var popup_48e78a86bcb6f3679a54572f0664b569 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0b489e2d4e68a43f74ba6bbd9803a628 = $(`<div id="html_0b489e2d4e68a43f74ba6bbd9803a628" style="width: 100.0%; height: 100.0%;">                 <b>Ayuratan Ayurvedics</b><br>                 Type: Doctor<br>                 Distance: 2.72 km<br>                 Address: Ayuratan Ayurvedics, Bangli Acton Road, Bhabola, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_48e78a86bcb6f3679a54572f0664b569.setContent(html_0b489e2d4e68a43f74ba6bbd9803a628);
+            
+        
+
+        marker_3e2491402a1bd78dca588a01ccbe767f.bindPopup(popup_48e78a86bcb6f3679a54572f0664b569)
+        ;
+
+        
+    
+    
+            var marker_ec3fa85e12d18ad797c640297a454993 = L.marker(
+                [19.37143, 72.8288],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_5023edcfad3786af12bdb9b099c0a055 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ec3fa85e12d18ad797c640297a454993.setIcon(icon_5023edcfad3786af12bdb9b099c0a055);
+        
+    
+        var popup_2f22542527edb1184c51dc580b7f8130 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3cbf67b3e1a74361f966a08f0578418a = $(`<div id="html_3cbf67b3e1a74361f966a08f0578418a" style="width: 100.0%; height: 100.0%;">                 <b>Dr. Neha Nagothkar</b><br>                 Type: Doctor<br>                 Distance: 3.43 km<br>                 Address: Dr. Neha Nagothkar, Siddharth Budh Vihar Marg, Umelman-Jari Mari Nagar-Chandrapada, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_2f22542527edb1184c51dc580b7f8130.setContent(html_3cbf67b3e1a74361f966a08f0578418a);
+            
+        
+
+        marker_ec3fa85e12d18ad797c640297a454993.bindPopup(popup_2f22542527edb1184c51dc580b7f8130)
+        ;
+
+        
+    
+    
+            var marker_cc53fc5a643849db7ca594307627a55d = L.marker(
+                [19.37315, 72.81421],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_6048a58a6f4d7ea954c5f80096896001 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cc53fc5a643849db7ca594307627a55d.setIcon(icon_6048a58a6f4d7ea954c5f80096896001);
+        
+    
+        var popup_b1a7b88556808136586b4dbfeb183d33 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_880b8163d8aaee3edda6e5e3568d13c8 = $(`<div id="html_880b8163d8aaee3edda6e5e3568d13c8" style="width: 100.0%; height: 100.0%;">                 <b>Marcas Healthcare</b><br>                 Type: Doctor<br>                 Distance: 3.49 km<br>                 Address: Marcas Healthcare, Kaul Heritage City, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_b1a7b88556808136586b4dbfeb183d33.setContent(html_880b8163d8aaee3edda6e5e3568d13c8);
+            
+        
+
+        marker_cc53fc5a643849db7ca594307627a55d.bindPopup(popup_b1a7b88556808136586b4dbfeb183d33)
+        ;
+
+        
+    
+    
+            var marker_00b9de53fd8c4b1baab82008ef2ac52b = L.marker(
+                [19.36745, 72.79526],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_59716760522fc6bb8af83c12f29edfac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_00b9de53fd8c4b1baab82008ef2ac52b.setIcon(icon_59716760522fc6bb8af83c12f29edfac);
+        
+    
+        var popup_28f1ac34019ffc964db3ae9be6d0dd65 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f11a6ba7ea0d76333bcd82bf7ee1d96c = $(`<div id="html_f11a6ba7ea0d76333bcd82bf7ee1d96c" style="width: 100.0%; height: 100.0%;">                 <b>Dr Kedarnath V Pandith</b><br>                 Type: Doctor<br>                 Distance: 3.77 km<br>                 Address: Dr Kedarnath V Pandith, Waghmare Wadi Cross, Giriz, Vasai West, Vasai 401201, India<br>             </div>`)[0];
+                popup_28f1ac34019ffc964db3ae9be6d0dd65.setContent(html_f11a6ba7ea0d76333bcd82bf7ee1d96c);
+            
+        
+
+        marker_00b9de53fd8c4b1baab82008ef2ac52b.bindPopup(popup_28f1ac34019ffc964db3ae9be6d0dd65)
+        ;
+
+        
+    
+    
+            var marker_8861ac636a58b870a1d4cf39236c490a = L.marker(
+                [19.37931, 72.8275],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_e4a50b154ef7a97fbfdbcd459864a664 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8861ac636a58b870a1d4cf39236c490a.setIcon(icon_e4a50b154ef7a97fbfdbcd459864a664);
+        
+    
+        var popup_a78332912716cadf8566d1e3a7ce9e7b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e83649f94bac33cab55dcccaeaff4f35 = $(`<div id="html_e83649f94bac33cab55dcccaeaff4f35" style="width: 100.0%; height: 100.0%;">                 <b>Dr. Amit Shah - Neurologist - Treatment For Stroke Epilepsy Headache Migraine Vertigo - Eeg Emg.</b><br>                 Type: Doctor<br>                 Distance: 4.24 km<br>                 Address: Dr. Amit Shah - Neurologist - Treatment For Stroke Epilepsy Headache Migraine Vertigo - Eeg Emg., Navghar Manikpur-Dindayal Nagar, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_a78332912716cadf8566d1e3a7ce9e7b.setContent(html_e83649f94bac33cab55dcccaeaff4f35);
+            
+        
+
+        marker_8861ac636a58b870a1d4cf39236c490a.bindPopup(popup_a78332912716cadf8566d1e3a7ce9e7b)
+        ;
+
+        
+    
+    
+            var marker_3be53f2584a85cfa26b04d624fdbbf34 = L.marker(
+                [19.38256, 72.82592],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_162ade87ac3194401ddf270a67a2de19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3be53f2584a85cfa26b04d624fdbbf34.setIcon(icon_162ade87ac3194401ddf270a67a2de19);
+        
+    
+        var popup_cf1eb37a02e2a7ad30ccbc7f072f84ca = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7ad86253180439423e0f758c5f275116 = $(`<div id="html_7ad86253180439423e0f758c5f275116" style="width: 100.0%; height: 100.0%;">                 <b>DR. Shriram</b><br>                 Type: Doctor<br>                 Distance: 4.56 km<br>                 Address: DR. Shriram, Navghar Manikpur-Sai Nagar-K T NGR, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_cf1eb37a02e2a7ad30ccbc7f072f84ca.setContent(html_7ad86253180439423e0f758c5f275116);
+            
+        
+
+        marker_3be53f2584a85cfa26b04d624fdbbf34.bindPopup(popup_cf1eb37a02e2a7ad30ccbc7f072f84ca)
+        ;
+
+        
+    
+    
+            var marker_86f91c70572fec739d8fbab766a017df = L.marker(
+                [19.38279, 72.8244],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_dcd0219a95e1bbfa27d02687e56e1418 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_86f91c70572fec739d8fbab766a017df.setIcon(icon_dcd0219a95e1bbfa27d02687e56e1418);
+        
+    
+        var popup_1aa35129510f32d89bef84c0dc6e403c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3102ef4a64f2f2944bf74a8783fecec = $(`<div id="html_e3102ef4a64f2f2944bf74a8783fecec" style="width: 100.0%; height: 100.0%;">                 <b>DR. Ravi Prasad</b><br>                 Type: Doctor<br>                 Distance: 4.56 km<br>                 Address: DR. Ravi Prasad, 60 Feet Road, Tarkhad-Navghar-Hari Om Nagar, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_1aa35129510f32d89bef84c0dc6e403c.setContent(html_e3102ef4a64f2f2944bf74a8783fecec);
+            
+        
+
+        marker_86f91c70572fec739d8fbab766a017df.bindPopup(popup_1aa35129510f32d89bef84c0dc6e403c)
+        ;
+
+        
+    
+    
+            var marker_7f74813f938fae3d67837720a31d7523 = L.marker(
+                [19.36045, 72.85796],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_91d48f82349711b56b66334ea65fc427 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7f74813f938fae3d67837720a31d7523.setIcon(icon_91d48f82349711b56b66334ea65fc427);
+        
+    
+        var popup_0ae70dd86cb03f6ba8776e60fae7acb1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7622880d3bfb8d1b019b63f0fc810b3 = $(`<div id="html_c7622880d3bfb8d1b019b63f0fc810b3" style="width: 100.0%; height: 100.0%;">                 <b>Apollo Diagnostics</b><br>                 Type: Doctor<br>                 Distance: 4.59 km<br>                 Address: Apollo Diagnostics, Bhoida Pada Road, Amol Nagar, Naigaon East, Vasai 401208, India<br>             </div>`)[0];
+                popup_0ae70dd86cb03f6ba8776e60fae7acb1.setContent(html_c7622880d3bfb8d1b019b63f0fc810b3);
+            
+        
+
+        marker_7f74813f938fae3d67837720a31d7523.bindPopup(popup_0ae70dd86cb03f6ba8776e60fae7acb1)
+        ;
+
+        
+    
+    
+            var marker_fb0d474c7c717a653e3cab1c77619fd0 = L.marker(
+                [19.38329, 72.82681],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_277394bcd299e8d1cc8b9a9f20976c90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fb0d474c7c717a653e3cab1c77619fd0.setIcon(icon_277394bcd299e8d1cc8b9a9f20976c90);
+        
+    
+        var popup_490a9572b235c6d70f685a278fcd3e11 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7462c111aae4f0e68ea679bc642b75d7 = $(`<div id="html_7462c111aae4f0e68ea679bc642b75d7" style="width: 100.0%; height: 100.0%;">                 <b>Aarogya Children Clinic</b><br>                 Type: Doctor<br>                 Distance: 4.66 km<br>                 Address: Aarogya Children Clinic, Navghar Manikpur-Sai Nagar-K T NGR, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_490a9572b235c6d70f685a278fcd3e11.setContent(html_7462c111aae4f0e68ea679bc642b75d7);
+            
+        
+
+        marker_fb0d474c7c717a653e3cab1c77619fd0.bindPopup(popup_490a9572b235c6d70f685a278fcd3e11)
+        ;
+
+        
+    
+    
+            var marker_70807cbd652815a66662a5cff5332829 = L.marker(
+                [19.31575, 72.85426],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_168c0b5f2693d7a20756b64d2c5009a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_70807cbd652815a66662a5cff5332829.setIcon(icon_168c0b5f2693d7a20756b64d2c5009a1);
+        
+    
+        var popup_e3d5d599c0e5d470ded53ed7c1c78121 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ec97d6f23a30c87621a3a00b4cff9fc8 = $(`<div id="html_ec97d6f23a30c87621a3a00b4cff9fc8" style="width: 100.0%; height: 100.0%;">                 <b>Arhinat Prukrutik Chikitsalaya Kendra</b><br>                 Type: Doctor<br>                 Distance: 4.71 km<br>                 Address: Arhinat Prukrutik Chikitsalaya Kendra, Dilip Babar Marg, Jesal Park, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_e3d5d599c0e5d470ded53ed7c1c78121.setContent(html_ec97d6f23a30c87621a3a00b4cff9fc8);
+            
+        
+
+        marker_70807cbd652815a66662a5cff5332829.bindPopup(popup_e3d5d599c0e5d470ded53ed7c1c78121)
+        ;
+
+        
+    
+    
+            var marker_41f143eb76b408bfd7b42d80956232fb = L.marker(
+                [19.38436, 72.82661],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_96f98152cf7095459e022ec7d293490e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_41f143eb76b408bfd7b42d80956232fb.setIcon(icon_96f98152cf7095459e022ec7d293490e);
+        
+    
+        var popup_4dce8b49f88533198278108cc194f367 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_228503017ccf78e05f8cde43b91fc501 = $(`<div id="html_228503017ccf78e05f8cde43b91fc501" style="width: 100.0%; height: 100.0%;">                 <b>Suyash Sonoghaphy</b><br>                 Type: Doctor<br>                 Distance: 4.77 km<br>                 Address: Suyash Sonoghaphy, 60 Feet Road, Navghar Manikpur-Sai Nagar, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_4dce8b49f88533198278108cc194f367.setContent(html_228503017ccf78e05f8cde43b91fc501);
+            
+        
+
+        marker_41f143eb76b408bfd7b42d80956232fb.bindPopup(popup_4dce8b49f88533198278108cc194f367)
+        ;
+
+        
+    
+    
+            var marker_1b952abb7379500923a0212b12ce2cda = L.marker(
+                [19.38351, 72.83122],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_b642fb5911b6d934b4e9105e2735de2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1b952abb7379500923a0212b12ce2cda.setIcon(icon_b642fb5911b6d934b4e9105e2735de2c);
+        
+    
+        var popup_4b5304ca8720649bea472665381eed44 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_89a73cc9cf6a37375d25f54900bb6c68 = $(`<div id="html_89a73cc9cf6a37375d25f54900bb6c68" style="width: 100.0%; height: 100.0%;">                 <b>Hair Transplant Trichology & Cosmetology Center</b><br>                 Type: Doctor<br>                 Distance: 4.78 km<br>                 Address: Hair Transplant Trichology & Cosmetology Center, Navghar Manikpur-Vishal Nagar, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_4b5304ca8720649bea472665381eed44.setContent(html_89a73cc9cf6a37375d25f54900bb6c68);
+            
+        
+
+        marker_1b952abb7379500923a0212b12ce2cda.bindPopup(popup_4b5304ca8720649bea472665381eed44)
+        ;
+
+        
+    
+    
+            var marker_39fb3d3aedd6674379a127be8c114994 = L.marker(
+                [19.38534, 72.82505],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_bd4e9a1d381ea28060bf1a43cbeffadb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_39fb3d3aedd6674379a127be8c114994.setIcon(icon_bd4e9a1d381ea28060bf1a43cbeffadb);
+        
+    
+        var popup_3f31be22fc23f8429acb411a93709766 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_78884d4dbee1c961292184270013c62f = $(`<div id="html_78884d4dbee1c961292184270013c62f" style="width: 100.0%; height: 100.0%;">                 <b>DR.Kapil V. Mahajan</b><br>                 Type: Doctor<br>                 Distance: 4.85 km<br>                 Address: DR.Kapil V. Mahajan, Lane Number 2, Navghar Manikpur-Sai Nagar, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_3f31be22fc23f8429acb411a93709766.setContent(html_78884d4dbee1c961292184270013c62f);
+            
+        
+
+        marker_39fb3d3aedd6674379a127be8c114994.bindPopup(popup_3f31be22fc23f8429acb411a93709766)
+        ;
+
+        
+    
+    
+            var marker_99a077feb610a6f6d975582f1f649b5b = L.marker(
+                [19.38406, 72.83274],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_1202ea88725cbe32f88aa09f5e21ce3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_99a077feb610a6f6d975582f1f649b5b.setIcon(icon_1202ea88725cbe32f88aa09f5e21ce3b);
+        
+    
+        var popup_4ce7ec2c7090b3c50c88c06e7699bb09 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b8444c79a5a8a7b8eb90680024d78d54 = $(`<div id="html_b8444c79a5a8a7b8eb90680024d78d54" style="width: 100.0%; height: 100.0%;">                 <b>Dr Jinal Vaghela</b><br>                 Type: Doctor<br>                 Distance: 4.89 km<br>                 Address: Dr Jinal Vaghela, Navghar Road, Samarth Krupa NGR-Navghar Road Area, Vasai East, Vasai 401208, India<br>             </div>`)[0];
+                popup_4ce7ec2c7090b3c50c88c06e7699bb09.setContent(html_b8444c79a5a8a7b8eb90680024d78d54);
+            
+        
+
+        marker_99a077feb610a6f6d975582f1f649b5b.bindPopup(popup_4ce7ec2c7090b3c50c88c06e7699bb09)
+        ;
+
+        
+    
+    
+            var marker_35ce8039399dce8da5fc4ab4b1fc756c = L.marker(
+                [19.31428, 72.85595],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_6bcfd4ecacf4b5cba6c7e4be1e7b7328 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_35ce8039399dce8da5fc4ab4b1fc756c.setIcon(icon_6bcfd4ecacf4b5cba6c7e4be1e7b7328);
+        
+    
+        var popup_578c1855df6daf2ff0071fe185d91584 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_91b081090f37b5065566e6dcc20450a5 = $(`<div id="html_91b081090f37b5065566e6dcc20450a5" style="width: 100.0%; height: 100.0%;">                 <b>Dr. Pratima Sunil Chopade- General Physician</b><br>                 Type: Doctor<br>                 Distance: 4.95 km<br>                 Address: Dr. Pratima Sunil Chopade- General Physician, Kashi Vishwanath Mandir Marg, Jesal Park, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_578c1855df6daf2ff0071fe185d91584.setContent(html_91b081090f37b5065566e6dcc20450a5);
+            
+        
+
+        marker_35ce8039399dce8da5fc4ab4b1fc756c.bindPopup(popup_578c1855df6daf2ff0071fe185d91584)
+        ;
+
+        
+    
+    
+            var marker_5509d83a8c6f9c59627efb566a3fde5c = L.marker(
+                [19.31367, 72.85649],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_d4168d8fad5ba08b2d5565c6f780e241 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5509d83a8c6f9c59627efb566a3fde5c.setIcon(icon_d4168d8fad5ba08b2d5565c6f780e241);
+        
+    
+        var popup_c203949f4885bc082dc1fe1d393df3cd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7bab8384132136b4684d73cf4df0ca84 = $(`<div id="html_7bab8384132136b4684d73cf4df0ca84" style="width: 100.0%; height: 100.0%;">                 <b>Dhartis Health Clinic</b><br>                 Type: Doctor<br>                 Distance: 5.04 km<br>                 Address: Dhartis Health Clinic, Rahul Park, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_c203949f4885bc082dc1fe1d393df3cd.setContent(html_7bab8384132136b4684d73cf4df0ca84);
+            
+        
+
+        marker_5509d83a8c6f9c59627efb566a3fde5c.bindPopup(popup_c203949f4885bc082dc1fe1d393df3cd)
+        ;
+
+        
+    
+    
+            var marker_1190bfbf23c62ac42a88c9f51da27dc9 = L.marker(
+                [19.31343, 72.85649],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_0c055322770ab2355e4b538d150f2ab6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1190bfbf23c62ac42a88c9f51da27dc9.setIcon(icon_0c055322770ab2355e4b538d150f2ab6);
+        
+    
+        var popup_b411c4a17d14d756b9a3a5bdb6d759c2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ac89c6952e757c81b28f40097cce946a = $(`<div id="html_ac89c6952e757c81b28f40097cce946a" style="width: 100.0%; height: 100.0%;">                 <b>Dispensary Family Physician & Surgeon</b><br>                 Type: Doctor<br>                 Distance: 5.05 km<br>                 Address: Dispensary Family Physician & Surgeon, Rahul Park Area-Asha Nagar, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_b411c4a17d14d756b9a3a5bdb6d759c2.setContent(html_ac89c6952e757c81b28f40097cce946a);
+            
+        
+
+        marker_1190bfbf23c62ac42a88c9f51da27dc9.bindPopup(popup_b411c4a17d14d756b9a3a5bdb6d759c2)
+        ;
+
+        
+    
+    
+            var marker_7e669c56e3dc9dde0a1858ff497bbf06 = L.marker(
+                [19.31107, 72.85651],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_b265ca5f715ed223771d792fbda6b4d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7e669c56e3dc9dde0a1858ff497bbf06.setIcon(icon_b265ca5f715ed223771d792fbda6b4d5);
+        
+    
+        var popup_aee23e8e3c506763988603f989312bd4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f4297e255fbd0bb724ca7517a5d989a8 = $(`<div id="html_f4297e255fbd0bb724ca7517a5d989a8" style="width: 100.0%; height: 100.0%;">                 <b>Masters Clinic</b><br>                 Type: Doctor<br>                 Distance: 5.22 km<br>                 Address: Masters Clinic, Navghar Road, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_aee23e8e3c506763988603f989312bd4.setContent(html_f4297e255fbd0bb724ca7517a5d989a8);
+            
+        
+
+        marker_7e669c56e3dc9dde0a1858ff497bbf06.bindPopup(popup_aee23e8e3c506763988603f989312bd4)
+        ;
+
+        
+    
+    
+            var marker_491b45a02617efc0d619407f591f9355 = L.marker(
+                [19.38858, 72.82677],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_ad5e7ea85c2e3b742f5ac1dc665b83f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_491b45a02617efc0d619407f591f9355.setIcon(icon_ad5e7ea85c2e3b742f5ac1dc665b83f7);
+        
+    
+        var popup_a0721f456c502d8775b8a27388a41532 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e3ba8345cdb6e67bbcc346617e27730d = $(`<div id="html_e3ba8345cdb6e67bbcc346617e27730d" style="width: 100.0%; height: 100.0%;">                 <b>DR. Khare's</b><br>                 Type: Doctor<br>                 Distance: 5.23 km<br>                 Address: DR. Khare's, Link Ambadi Road, Navghar Manikpur-Vishal Nagar, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_a0721f456c502d8775b8a27388a41532.setContent(html_e3ba8345cdb6e67bbcc346617e27730d);
+            
+        
+
+        marker_491b45a02617efc0d619407f591f9355.bindPopup(popup_a0721f456c502d8775b8a27388a41532)
+        ;
+
+        
+    
+    
+            var marker_28686de543756aa1e2d98289325db679 = L.marker(
+                [19.38889, 72.82674],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_64f2b215a6020bdd8f662514cf9f630f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_28686de543756aa1e2d98289325db679.setIcon(icon_64f2b215a6020bdd8f662514cf9f630f);
+        
+    
+        var popup_bbb3bf5150ff4084598d620d504f5124 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f6ea1734f9cf4e39c973d9e0cbff463b = $(`<div id="html_f6ea1734f9cf4e39c973d9e0cbff463b" style="width: 100.0%; height: 100.0%;">                 <b>DR. Bhavesh Magaveer</b><br>                 Type: Doctor<br>                 Distance: 5.27 km<br>                 Address: DR. Bhavesh Magaveer, Navghar Manikpur-Vishal Nagar, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_bbb3bf5150ff4084598d620d504f5124.setContent(html_f6ea1734f9cf4e39c973d9e0cbff463b);
+            
+        
+
+        marker_28686de543756aa1e2d98289325db679.bindPopup(popup_bbb3bf5150ff4084598d620d504f5124)
+        ;
+
+        
+    
+    
+            var marker_25e42c5a9eb8cb5b7f0255c73b64dc7c = L.marker(
+                [19.38889, 72.82674],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_475727a8d702a2bc2909dec8786a622e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_25e42c5a9eb8cb5b7f0255c73b64dc7c.setIcon(icon_475727a8d702a2bc2909dec8786a622e);
+        
+    
+        var popup_7d2e935846ccee221a3b491dbda1cead = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b0cda5f596510062422f515be72da5e7 = $(`<div id="html_b0cda5f596510062422f515be72da5e7" style="width: 100.0%; height: 100.0%;">                 <b>Dr. H. Shrinivas J. Shetty</b><br>                 Type: Doctor<br>                 Distance: 5.27 km<br>                 Address: Dr. H. Shrinivas J. Shetty, Navghar Manikpur-Vishal Nagar, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_7d2e935846ccee221a3b491dbda1cead.setContent(html_b0cda5f596510062422f515be72da5e7);
+            
+        
+
+        marker_25e42c5a9eb8cb5b7f0255c73b64dc7c.bindPopup(popup_7d2e935846ccee221a3b491dbda1cead)
+        ;
+
+        
+    
+    
+            var marker_02093a78f309654db40bdb64f90da280 = L.marker(
+                [19.39044, 72.82506],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_26b02eaa6a0a7739585da688aa8f9e09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_02093a78f309654db40bdb64f90da280.setIcon(icon_26b02eaa6a0a7739585da688aa8f9e09);
+        
+    
+        var popup_9f0d3b7f4260c6e2f79aaad3b35f36eb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7689d59cf843d760a15d9eb7516cdc7d = $(`<div id="html_7689d59cf843d760a15d9eb7516cdc7d" style="width: 100.0%; height: 100.0%;">                 <b>DR. Joeshp Chettiar</b><br>                 Type: Doctor<br>                 Distance: 5.41 km<br>                 Address: DR. Joeshp Chettiar, Tarkhad-Om Nagar-Krishna Township, Vasai West, Vasai 401202, India<br>             </div>`)[0];
+                popup_9f0d3b7f4260c6e2f79aaad3b35f36eb.setContent(html_7689d59cf843d760a15d9eb7516cdc7d);
+            
+        
+
+        marker_02093a78f309654db40bdb64f90da280.bindPopup(popup_9f0d3b7f4260c6e2f79aaad3b35f36eb)
+        ;
+
+        
+    
+    
+            var marker_914c8acb8f2aa8d761b70c49c0cf8924 = L.marker(
+                [19.30551, 72.85352],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_e516586460ab40f2f7833ec360479098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_914c8acb8f2aa8d761b70c49c0cf8924.setIcon(icon_e516586460ab40f2f7833ec360479098);
+        
+    
+        var popup_636fb652169978bafde964595e1891c4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_05c404e6796fc037ce3ffdcf0d6ee1c3 = $(`<div id="html_05c404e6796fc037ce3ffdcf0d6ee1c3" style="width: 100.0%; height: 100.0%;">                 <b>Smruti Homeopathic Clinic</b><br>                 Type: Doctor<br>                 Distance: 5.43 km<br>                 Address: Smruti Homeopathic Clinic, Mahatma Jyotiba Phule Marg, Kharigaon, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_636fb652169978bafde964595e1891c4.setContent(html_05c404e6796fc037ce3ffdcf0d6ee1c3);
+            
+        
+
+        marker_914c8acb8f2aa8d761b70c49c0cf8924.bindPopup(popup_636fb652169978bafde964595e1891c4)
+        ;
+
+        
+    
+    
+            var marker_c6038031dd7318b7951195fe1cff0539 = L.marker(
+                [19.30528, 72.85375],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_a9b712fdb304c21108de1938f8fa661b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c6038031dd7318b7951195fe1cff0539.setIcon(icon_a9b712fdb304c21108de1938f8fa661b);
+        
+    
+        var popup_5f4d0ca1f26f57eee43d4b0b1a50f2c1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_28d2f8609fa045a98773ad8c7d243e67 = $(`<div id="html_28d2f8609fa045a98773ad8c7d243e67" style="width: 100.0%; height: 100.0%;">                 <b>Aarush Clinical Laboratory</b><br>                 Type: Doctor<br>                 Distance: 5.46 km<br>                 Address: Aarush Clinical Laboratory, Kharigaon, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_5f4d0ca1f26f57eee43d4b0b1a50f2c1.setContent(html_28d2f8609fa045a98773ad8c7d243e67);
+            
+        
+
+        marker_c6038031dd7318b7951195fe1cff0539.bindPopup(popup_5f4d0ca1f26f57eee43d4b0b1a50f2c1)
+        ;
+
+        
+    
+    
+            var marker_b6a0246c41cb9e0c0044a8a12bf4275a = L.marker(
+                [19.30928, 72.85799],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_4d78aa66d13e560102c7e775194c13da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b6a0246c41cb9e0c0044a8a12bf4275a.setIcon(icon_4d78aa66d13e560102c7e775194c13da);
+        
+    
+        var popup_a03a097b9a5f0ff488a05d0102b283cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0477737a1d7cdf2b03b4055e36f1e063 = $(`<div id="html_0477737a1d7cdf2b03b4055e36f1e063" style="width: 100.0%; height: 100.0%;">                 <b>Shri Balaji Clinic</b><br>                 Type: Doctor<br>                 Distance: 5.47 km<br>                 Address: Shri Balaji Clinic, Talav Road, Hari Chandra Nagar, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_a03a097b9a5f0ff488a05d0102b283cc.setContent(html_0477737a1d7cdf2b03b4055e36f1e063);
+            
+        
+
+        marker_b6a0246c41cb9e0c0044a8a12bf4275a.bindPopup(popup_a03a097b9a5f0ff488a05d0102b283cc)
+        ;
+
+        
+    
+    
+            var marker_dcbc6d65372c50f3a56aa3ae41881daf = L.marker(
+                [19.30905, 72.85921],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_55f368690ca7385512d8397f928b57b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dcbc6d65372c50f3a56aa3ae41881daf.setIcon(icon_55f368690ca7385512d8397f928b57b7);
+        
+    
+        var popup_d1a16485e10dbdfe8a5ee716bffe6803 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_42e7d6fb7bb67b0498dafc501e5418e5 = $(`<div id="html_42e7d6fb7bb67b0498dafc501e5418e5" style="width: 100.0%; height: 100.0%;">                 <b>Gaurav Clinic</b><br>                 Type: Doctor<br>                 Distance: 5.58 km<br>                 Address: Gaurav Clinic, Navghar Juna Talab Road, Salasar Nagar, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_d1a16485e10dbdfe8a5ee716bffe6803.setContent(html_42e7d6fb7bb67b0498dafc501e5418e5);
+            
+        
+
+        marker_dcbc6d65372c50f3a56aa3ae41881daf.bindPopup(popup_d1a16485e10dbdfe8a5ee716bffe6803)
+        ;
+
+        
+    
+    
+            var marker_ef5d82e2ed7dea3b87aadc0d17279087 = L.marker(
+                [19.30923, 72.85971],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_d3a972acf1822f29e2f07b9340ec9eb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ef5d82e2ed7dea3b87aadc0d17279087.setIcon(icon_d3a972acf1822f29e2f07b9340ec9eb0);
+        
+    
+        var popup_c4d62484394e129941acdd702b6650b0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fe2e3fd9397fed347b3ac742b30c1c6f = $(`<div id="html_fe2e3fd9397fed347b3ac742b30c1c6f" style="width: 100.0%; height: 100.0%;">                 <b>Gurukrupa Clinic</b><br>                 Type: Doctor<br>                 Distance: 5.61 km<br>                 Address: Gurukrupa Clinic, Navghar Juna Talab Road, Shiv Kripa Chawl-Paras Nagar, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_c4d62484394e129941acdd702b6650b0.setContent(html_fe2e3fd9397fed347b3ac742b30c1c6f);
+            
+        
+
+        marker_ef5d82e2ed7dea3b87aadc0d17279087.bindPopup(popup_c4d62484394e129941acdd702b6650b0)
+        ;
+
+        
+    
+    
+            var marker_d3ea885c7bd506df0fffeadb755e699c = L.marker(
+                [19.30904, 72.86021],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_f27893fd72d01e0e567d75b313626b82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d3ea885c7bd506df0fffeadb755e699c.setIcon(icon_f27893fd72d01e0e567d75b313626b82);
+        
+    
+        var popup_b0d4abb6f80ca295da1a240dfcfce172 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b6d8324883061b88e5362f0627c3c1db = $(`<div id="html_b6d8324883061b88e5362f0627c3c1db" style="width: 100.0%; height: 100.0%;">                 <b>Bhagya Clinic</b><br>                 Type: Doctor<br>                 Distance: 5.66 km<br>                 Address: Bhagya Clinic, Navghar Juna Talab Road, Shiv Kripa Chawl-Paras Nagar, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_b0d4abb6f80ca295da1a240dfcfce172.setContent(html_b6d8324883061b88e5362f0627c3c1db);
+            
+        
+
+        marker_d3ea885c7bd506df0fffeadb755e699c.bindPopup(popup_b0d4abb6f80ca295da1a240dfcfce172)
+        ;
+
+        
+    
+    
+            var marker_c10923c3626c2f74be7f517568e0d778 = L.marker(
+                [19.30904, 72.86021],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_5ad385dea8144f4cc7dd75ee0e57366f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c10923c3626c2f74be7f517568e0d778.setIcon(icon_5ad385dea8144f4cc7dd75ee0e57366f);
+        
+    
+        var popup_e5a62a89b5c7e886b879b0d2ac3b21f2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d0d87a4fe2d88e4e57499c8719c4e2f7 = $(`<div id="html_d0d87a4fe2d88e4e57499c8719c4e2f7" style="width: 100.0%; height: 100.0%;">                 <b>DR. Y H Shah</b><br>                 Type: Doctor<br>                 Distance: 5.66 km<br>                 Address: DR. Y H Shah, Navghar Juna Talab Road, Shiv Kripa Chawl-Paras Nagar, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_e5a62a89b5c7e886b879b0d2ac3b21f2.setContent(html_d0d87a4fe2d88e4e57499c8719c4e2f7);
+            
+        
+
+        marker_c10923c3626c2f74be7f517568e0d778.bindPopup(popup_e5a62a89b5c7e886b879b0d2ac3b21f2)
+        ;
+
+        
+    
+    
+            var marker_cb11d85b1badb0c7e56842924f7fde79 = L.marker(
+                [19.30397, 72.85511],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_33c44269042985ba041a65f6b071a7e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cb11d85b1badb0c7e56842924f7fde79.setIcon(icon_33c44269042985ba041a65f6b071a7e0);
+        
+    
+        var popup_ada2d7bfa5d0b45feb7a4efbf3e20a05 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c886500e720a2805352ab2d20913cb08 = $(`<div id="html_c886500e720a2805352ab2d20913cb08" style="width: 100.0%; height: 100.0%;">                 <b>Bholenath Nasta Centre</b><br>                 Type: Doctor<br>                 Distance: 5.67 km<br>                 Address: Bholenath Nasta Centre, Narmada Nagar-Rawal Nagar, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_ada2d7bfa5d0b45feb7a4efbf3e20a05.setContent(html_c886500e720a2805352ab2d20913cb08);
+            
+        
+
+        marker_cb11d85b1badb0c7e56842924f7fde79.bindPopup(popup_ada2d7bfa5d0b45feb7a4efbf3e20a05)
+        ;
+
+        
+    
+    
+            var marker_659cdff4c57e043093910055934c3560 = L.marker(
+                [19.3937, 72.82952],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_387d607242fe29fadd54ef146f04986f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_659cdff4c57e043093910055934c3560.setIcon(icon_387d607242fe29fadd54ef146f04986f);
+        
+    
+        var popup_6c47db0582d9aa3ec2396a7b490bb4e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b1440559c26d44ea896381641df5d0fa = $(`<div id="html_b1440559c26d44ea896381641df5d0fa" style="width: 100.0%; height: 100.0%;">                 <b>Hariom Healthcare Clinic</b><br>                 Type: Doctor<br>                 Distance: 5.84 km<br>                 Address: Hariom Healthcare Clinic, Ambadi Road, Vasai East, Vasai 401208, India<br>             </div>`)[0];
+                popup_6c47db0582d9aa3ec2396a7b490bb4e2.setContent(html_b1440559c26d44ea896381641df5d0fa);
+            
+        
+
+        marker_659cdff4c57e043093910055934c3560.bindPopup(popup_6c47db0582d9aa3ec2396a7b490bb4e2)
+        ;
+
+        
+    
+    
+            var marker_3fac7400b91121d4ef46b722c2945c42 = L.marker(
+                [19.3937, 72.82952],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_82f036958021fa6a0a77263b59d6e1c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3fac7400b91121d4ef46b722c2945c42.setIcon(icon_82f036958021fa6a0a77263b59d6e1c3);
+        
+    
+        var popup_f90e4505725fa2afd6b4551a864dffd2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_179d723309243294fb89712187485a80 = $(`<div id="html_179d723309243294fb89712187485a80" style="width: 100.0%; height: 100.0%;">                 <b>Magarjuna Ayurvedic Clinic</b><br>                 Type: Doctor<br>                 Distance: 5.84 km<br>                 Address: Magarjuna Ayurvedic Clinic, Ambadi Road, Vasai East, Vasai 401208, India<br>             </div>`)[0];
+                popup_f90e4505725fa2afd6b4551a864dffd2.setContent(html_179d723309243294fb89712187485a80);
+            
+        
+
+        marker_3fac7400b91121d4ef46b722c2945c42.bindPopup(popup_f90e4505725fa2afd6b4551a864dffd2)
+        ;
+
+        
+    
+    
+            var marker_b5a456c9c352cea6fee2afca3b3cf601 = L.marker(
+                [19.30463, 72.85946],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_46c1a98a438a781489a6d12e29294a10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b5a456c9c352cea6fee2afca3b3cf601.setIcon(icon_46c1a98a438a781489a6d12e29294a10);
+        
+    
+        var popup_ca346cd2323ff5a6515c4789ec58e546 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_adc25ba5e5c0ce08809e8753860a20e4 = $(`<div id="html_adc25ba5e5c0ce08809e8753860a20e4" style="width: 100.0%; height: 100.0%;">                 <b>Vijay Clinic</b><br>                 Type: Doctor<br>                 Distance: 5.93 km<br>                 Address: Vijay Clinic, Goddev Road, Navghar Naka, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_ca346cd2323ff5a6515c4789ec58e546.setContent(html_adc25ba5e5c0ce08809e8753860a20e4);
+            
+        
+
+        marker_b5a456c9c352cea6fee2afca3b3cf601.bindPopup(popup_ca346cd2323ff5a6515c4789ec58e546)
+        ;
+
+        
+    
+    
+            var marker_970b43f4e3eefb600c8b3f99a73232a3 = L.marker(
+                [19.30562, 72.86144],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_269447331d42d35ebc0a96a093ecc666 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_970b43f4e3eefb600c8b3f99a73232a3.setIcon(icon_269447331d42d35ebc0a96a093ecc666);
+        
+    
+        var popup_c6960f06012703f9a9ff154260e29ab2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cc34e30345c36de97833718311d90e02 = $(`<div id="html_cc34e30345c36de97833718311d90e02" style="width: 100.0%; height: 100.0%;">                 <b>Paran Clinic</b><br>                 Type: Doctor<br>                 Distance: 6.01 km<br>                 Address: Paran Clinic, Goddev Road, Indira Nagar-Shirdi Nagar, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_c6960f06012703f9a9ff154260e29ab2.setContent(html_cc34e30345c36de97833718311d90e02);
+            
+        
+
+        marker_970b43f4e3eefb600c8b3f99a73232a3.bindPopup(popup_c6960f06012703f9a9ff154260e29ab2)
+        ;
+
+        
+    
+    
+            var marker_2f8ef64357cb75cc40ee2c57d75dc64a = L.marker(
+                [19.30129, 72.85692],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_ea4a22715feff2b407f526e46853d546 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2f8ef64357cb75cc40ee2c57d75dc64a.setIcon(icon_ea4a22715feff2b407f526e46853d546);
+        
+    
+        var popup_c940f121f7fe007fa6737ce5c352bfc2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ddf5bf11272c1268af9f01b8e36f557c = $(`<div id="html_ddf5bf11272c1268af9f01b8e36f557c" style="width: 100.0%; height: 100.0%;">                 <b>Shri Sai Clinic</b><br>                 Type: Doctor<br>                 Distance: 6.01 km<br>                 Address: Shri Sai Clinic, Indira Nagar-Sonam Sagar, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_c940f121f7fe007fa6737ce5c352bfc2.setContent(html_ddf5bf11272c1268af9f01b8e36f557c);
+            
+        
+
+        marker_2f8ef64357cb75cc40ee2c57d75dc64a.bindPopup(popup_c940f121f7fe007fa6737ce5c352bfc2)
+        ;
+
+        
+    
+    
+            var marker_985af1a5aa168298d29049f7c16ca789 = L.marker(
+                [19.30482, 72.86264],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_0bc19324351620c43c25ef0a2632baa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_985af1a5aa168298d29049f7c16ca789.setIcon(icon_0bc19324351620c43c25ef0a2632baa1);
+        
+    
+        var popup_43b9f71d7f6bae37643e7f05a1ff0d1d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_2042007094a675d102474def4a72c611 = $(`<div id="html_2042007094a675d102474def4a72c611" style="width: 100.0%; height: 100.0%;">                 <b>Shrey Clinic</b><br>                 Type: Doctor<br>                 Distance: 6.16 km<br>                 Address: Shrey Clinic, Navghar Road, Indira Nagar-Anand Nagar, Bhayander East, Mira Bhayander 401105, India<br>             </div>`)[0];
+                popup_43b9f71d7f6bae37643e7f05a1ff0d1d.setContent(html_2042007094a675d102474def4a72c611);
+            
+        
+
+        marker_985af1a5aa168298d29049f7c16ca789.bindPopup(popup_43b9f71d7f6bae37643e7f05a1ff0d1d)
+        ;
+
+        
+    
+    
+            var marker_5dcf476ef2aaa5d46776f2fbe766487a = L.marker(
+                [19.40219, 72.83574],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_2e3d0dc8228e04fbcbba83e2c0a2915d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5dcf476ef2aaa5d46776f2fbe766487a.setIcon(icon_2e3d0dc8228e04fbcbba83e2c0a2915d);
+        
+    
+        var popup_2e4a30bacc7e9f1eea0bff82933aafc2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f54c65c4fbeaed5b9bdab0431f987bae = $(`<div id="html_f54c65c4fbeaed5b9bdab0431f987bae" style="width: 100.0%; height: 100.0%;">                 <b>Dr Jacqueline's Clinic</b><br>                 Type: Doctor<br>                 Distance: 6.9 km<br>                 Address: Dr Jacqueline's Clinic, Vasant Nagari Evershine City Road, Vasant Nagari, Vasai East, Vasai 401208, India<br>             </div>`)[0];
+                popup_2e4a30bacc7e9f1eea0bff82933aafc2.setContent(html_f54c65c4fbeaed5b9bdab0431f987bae);
+            
+        
+
+        marker_5dcf476ef2aaa5d46776f2fbe766487a.bindPopup(popup_2e4a30bacc7e9f1eea0bff82933aafc2)
+        ;
+
+        
+    
+    
+            var marker_8ddc7c483cd5ec4126f616d7d5d245ff = L.marker(
+                [19.40228, 72.83596],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_ff7d0e88d57c7d2ec31f99e3d6ec437e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8ddc7c483cd5ec4126f616d7d5d245ff.setIcon(icon_ff7d0e88d57c7d2ec31f99e3d6ec437e);
+        
+    
+        var popup_59b8b68cd2d4227ba7cfb760c257547d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b6ccf5554321ee072e3016e6e025ca6 = $(`<div id="html_8b6ccf5554321ee072e3016e6e025ca6" style="width: 100.0%; height: 100.0%;">                 <b>Himansh Clinic</b><br>                 Type: Doctor<br>                 Distance: 6.92 km<br>                 Address: Himansh Clinic, Vasant Nagari Evershine City Road, Vasant Nagari, Vasai East, Vasai 401208, India<br>             </div>`)[0];
+                popup_59b8b68cd2d4227ba7cfb760c257547d.setContent(html_8b6ccf5554321ee072e3016e6e025ca6);
+            
+        
+
+        marker_8ddc7c483cd5ec4126f616d7d5d245ff.bindPopup(popup_59b8b68cd2d4227ba7cfb760c257547d)
+        ;
+
+        
+    
+    
+            var marker_9502ae20c20c34c5a4c29c786c1eb5ea = L.marker(
+                [19.29666, 72.86494],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_0fe0c203604364ba9c9980c2362e0609 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9502ae20c20c34c5a4c29c786c1eb5ea.setIcon(icon_0fe0c203604364ba9c9980c2362e0609);
+        
+    
+        var popup_a9f94e9724bfb6088d5cd0e3e55245c4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bc73cd521bebd6f63baa6a5acb3e017e = $(`<div id="html_bc73cd521bebd6f63baa6a5acb3e017e" style="width: 100.0%; height: 100.0%;">                 <b>Dr. Rhea Shetty - Dermatologist</b><br>                 Type: Doctor<br>                 Distance: 6.96 km<br>                 Address: Dr. Rhea Shetty - Dermatologist, Seven Square Chowk, Ramdev Park, Mira Road East, Mira Bhayander 401107, India<br>             </div>`)[0];
+                popup_a9f94e9724bfb6088d5cd0e3e55245c4.setContent(html_bc73cd521bebd6f63baa6a5acb3e017e);
+            
+        
+
+        marker_9502ae20c20c34c5a4c29c786c1eb5ea.bindPopup(popup_a9f94e9724bfb6088d5cd0e3e55245c4)
+        ;
+
+        
+    
+    
+            var marker_8d792a7a9c42d4ff9cad436dbd8a9e5c = L.marker(
+                [19.40559, 72.83093],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_c841109f3c6ad3c770dc002dbec5ac0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8d792a7a9c42d4ff9cad436dbd8a9e5c.setIcon(icon_c841109f3c6ad3c770dc002dbec5ac0b);
+        
+    
+        var popup_8946f3c13cac6fb865c58ada2f366a27 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8e9d772b140f7cf9b1c65536a87c7415 = $(`<div id="html_8e9d772b140f7cf9b1c65536a87c7415" style="width: 100.0%; height: 100.0%;">                 <b>Dr. K.D.Yadav - Family Physician (Skin& Hair Loss)</b><br>                 Type: Doctor<br>                 Distance: 7.16 km<br>                 Address: Dr. K.D.Yadav - Family Physician (Skin& Hair Loss), Vasant Nagari, Vasai East, Vasai 401208, India<br>             </div>`)[0];
+                popup_8946f3c13cac6fb865c58ada2f366a27.setContent(html_8e9d772b140f7cf9b1c65536a87c7415);
+            
+        
+
+        marker_8d792a7a9c42d4ff9cad436dbd8a9e5c.bindPopup(popup_8946f3c13cac6fb865c58ada2f366a27)
+        ;
+
+        
+    
+    
+            var marker_9e5fc6fc32c9628f01d2575b2eb33693 = L.marker(
+                [19.40829, 72.82764],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_ef05554a1b343a2695839c51aa3e2545 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_9e5fc6fc32c9628f01d2575b2eb33693.setIcon(icon_ef05554a1b343a2695839c51aa3e2545);
+        
+    
+        var popup_c6c348a326fafcf13cddb6e1c09af289 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7531bbc080cd4d20c709934eb752ed02 = $(`<div id="html_7531bbc080cd4d20c709934eb752ed02" style="width: 100.0%; height: 100.0%;">                 <b>Dr Uma's Clinic</b><br>                 Type: Doctor<br>                 Distance: 7.41 km<br>                 Address: Dr Uma's Clinic, Achole-Alkapuri, Nalasopara East, Nalasopara 401209, India<br>             </div>`)[0];
+                popup_c6c348a326fafcf13cddb6e1c09af289.setContent(html_7531bbc080cd4d20c709934eb752ed02);
+            
+        
+
+        marker_9e5fc6fc32c9628f01d2575b2eb33693.bindPopup(popup_c6c348a326fafcf13cddb6e1c09af289)
+        ;
+
+        
+    
+    
+            var marker_7cc5c16cbc998dc741f483d37e6c9945 = L.marker(
+                [19.28953, 72.86412],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_ad64ac44b68bcd11c0d2fd63db21da5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7cc5c16cbc998dc741f483d37e6c9945.setIcon(icon_ad64ac44b68bcd11c0d2fd63db21da5a);
+        
+    
+        var popup_b3a43c4333c1c62949d5f3f412fd84de = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a793147a1ea93ffe6acf1f936f51a0dd = $(`<div id="html_a793147a1ea93ffe6acf1f936f51a0dd" style="width: 100.0%; height: 100.0%;">                 <b>Nova Ivf Fertility Center - Best Ivf Center In Mira Road, Mumbai</b><br>                 Type: Doctor<br>                 Distance: 7.49 km<br>                 Address: Nova Ivf Fertility Center - Best Ivf Center In Mira Road, Mumbai, Mira Bhayandar Road, Geeta Nagar-Parshwa Nagar, Mira Road East, Mira Bhayander 401107, India<br>             </div>`)[0];
+                popup_b3a43c4333c1c62949d5f3f412fd84de.setContent(html_a793147a1ea93ffe6acf1f936f51a0dd);
+            
+        
+
+        marker_7cc5c16cbc998dc741f483d37e6c9945.bindPopup(popup_b3a43c4333c1c62949d5f3f412fd84de)
+        ;
+
+        
+    
+    
+            var marker_4a5a1303e8248814d43d453447877082 = L.marker(
+                [19.28393, 72.85696],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_9f8713d834e3f07dd734dfd963e05333 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4a5a1303e8248814d43d453447877082.setIcon(icon_9f8713d834e3f07dd734dfd963e05333);
+        
+    
+        var popup_ef033d4e9e45be8a465648e72f5312cd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_6e1d10564f4dd1bae9d94e99cc524513 = $(`<div id="html_6e1d10564f4dd1bae9d94e99cc524513" style="width: 100.0%; height: 100.0%;">                 <b>Dr. Hedayat- General Physician In Maharashtra</b><br>                 Type: Doctor<br>                 Distance: 7.56 km<br>                 Address: Dr. Hedayat- General Physician In Maharashtra, Shamsh Masjid Road, Naya Nagar, Mira Road East, Mira Bhayander 401107, India<br>             </div>`)[0];
+                popup_ef033d4e9e45be8a465648e72f5312cd.setContent(html_6e1d10564f4dd1bae9d94e99cc524513);
+            
+        
+
+        marker_4a5a1303e8248814d43d453447877082.bindPopup(popup_ef033d4e9e45be8a465648e72f5312cd)
+        ;
+
+        
+    
+    
+            var marker_5e5c21bd58aba23e546e945c88a22707 = L.marker(
+                [19.41214, 72.81111],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_52951f0c8215e4d3577463bbd875b8ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5e5c21bd58aba23e546e945c88a22707.setIcon(icon_52951f0c8215e4d3577463bbd875b8ac);
+        
+    
+        var popup_7cb11b86bf6a43e920039c5e48147158 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_44d1c4311d2c9231db6f1d7268b385e4 = $(`<div id="html_44d1c4311d2c9231db6f1d7268b385e4" style="width: 100.0%; height: 100.0%;">                 <b>Ashmiza Clinic</b><br>                 Type: Doctor<br>                 Distance: 7.82 km<br>                 Address: Ashmiza Clinic, Panchal Nagar-Hanuman Nagar, Nalasopara West, Nalasopara 401203, India<br>             </div>`)[0];
+                popup_7cb11b86bf6a43e920039c5e48147158.setContent(html_44d1c4311d2c9231db6f1d7268b385e4);
+            
+        
+
+        marker_5e5c21bd58aba23e546e945c88a22707.bindPopup(popup_7cb11b86bf6a43e920039c5e48147158)
+        ;
+
+        
+    
+    
+            var marker_ce1e6b923f7432f842ab96cfdc47d369 = L.marker(
+                [19.29, 72.86985],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_a4894632107030f56f17bd9f8163382f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ce1e6b923f7432f842ab96cfdc47d369.setIcon(icon_a4894632107030f56f17bd9f8163382f);
+        
+    
+        var popup_76eb4f5dda18323a253ed8607da9e5e0 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a08277f631887bd2e8ff13f3a3e123ab = $(`<div id="html_a08277f631887bd2e8ff13f3a3e123ab" style="width: 100.0%; height: 100.0%;">                 <b>Dr. Brijesh Dube, Laparoscopic, Bariatric & Hernia Surgeon</b><br>                 Type: Doctor<br>                 Distance: 7.85 km<br>                 Address: Dr. Brijesh Dube, Laparoscopic, Bariatric & Hernia Surgeon, General Arun Kumar Vaidya Road, Beverly Park, Mira Road East, Mira Bhayander 401107, India<br>             </div>`)[0];
+                popup_76eb4f5dda18323a253ed8607da9e5e0.setContent(html_a08277f631887bd2e8ff13f3a3e123ab);
+            
+        
+
+        marker_ce1e6b923f7432f842ab96cfdc47d369.bindPopup(popup_76eb4f5dda18323a253ed8607da9e5e0)
+        ;
+
+        
+    
+    
+            var marker_8c2fc6a0a9d6789cb1428d8205b6c60f = L.marker(
+                [19.28134, 72.85805],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_cd0c2d5d079953bfda053de9de4d437c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_8c2fc6a0a9d6789cb1428d8205b6c60f.setIcon(icon_cd0c2d5d079953bfda053de9de4d437c);
+        
+    
+        var popup_08dec1aa9f4138769d90c079c44ff1e1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8aa08c4a623a67b1493c357066750f49 = $(`<div id="html_8aa08c4a623a67b1493c357066750f49" style="width: 100.0%; height: 100.0%;">                 <b>Dr. Vandana Rahul Sangle General Physician</b><br>                 Type: Doctor<br>                 Distance: 7.86 km<br>                 Address: Dr. Vandana Rahul Sangle General Physician, Shree Swami Ayyappa Marg, Shanti Nagar-Sector 1, Mira Road East, Mira Bhayander 401107, India<br>             </div>`)[0];
+                popup_08dec1aa9f4138769d90c079c44ff1e1.setContent(html_8aa08c4a623a67b1493c357066750f49);
+            
+        
+
+        marker_8c2fc6a0a9d6789cb1428d8205b6c60f.bindPopup(popup_08dec1aa9f4138769d90c079c44ff1e1)
+        ;
+
+        
+    
+    
+            var marker_fbe6f4d952977f9f2f5bcf0077fdd5b5 = L.marker(
+                [19.41279, 72.81229],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_2fbeaf7d49a4f02dff477acc7077147a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fbe6f4d952977f9f2f5bcf0077fdd5b5.setIcon(icon_2fbeaf7d49a4f02dff477acc7077147a);
+        
+    
+        var popup_67c5318ceebfa34d2613e5b06d3a857e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_72c5e62442ce2864a8cac9ebbb422a44 = $(`<div id="html_72c5e62442ce2864a8cac9ebbb422a44" style="width: 100.0%; height: 100.0%;">                 <b>S S Clinic</b><br>                 Type: Doctor<br>                 Distance: 7.88 km<br>                 Address: S S Clinic, Panchal Nagar-Hanuman Nagar, Nalasopara West, Nalasopara 401203, India<br>             </div>`)[0];
+                popup_67c5318ceebfa34d2613e5b06d3a857e.setContent(html_72c5e62442ce2864a8cac9ebbb422a44);
+            
+        
+
+        marker_fbe6f4d952977f9f2f5bcf0077fdd5b5.bindPopup(popup_67c5318ceebfa34d2613e5b06d3a857e)
+        ;
+
+        
+    
+    
+            var marker_76efa8068b2cf7c572f0d57d51020c37 = L.marker(
+                [19.28508, 72.8655],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_fc154592b7335302843a99394bf6672f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_76efa8068b2cf7c572f0d57d51020c37.setIcon(icon_fc154592b7335302843a99394bf6672f);
+        
+    
+        var popup_94f07d60b6e68d358d202020b08c929b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b5e38875fca076321fda80f615af11fe = $(`<div id="html_b5e38875fca076321fda80f615af11fe" style="width: 100.0%; height: 100.0%;">                 <b>Dr. Nicholas Drago - Dermatologist - Dermaclin</b><br>                 Type: Doctor<br>                 Distance: 7.97 km<br>                 Address: Dr. Nicholas Drago - Dermatologist - Dermaclin, Bharti Nagar, Mira Road East, Mira Bhayander 401107, India<br>             </div>`)[0];
+                popup_94f07d60b6e68d358d202020b08c929b.setContent(html_b5e38875fca076321fda80f615af11fe);
+            
+        
+
+        marker_76efa8068b2cf7c572f0d57d51020c37.bindPopup(popup_94f07d60b6e68d358d202020b08c929b)
+        ;
+
+        
+    
+    
+            var marker_452b2914128dfaa42ddd1ffa0faf43d8 = L.marker(
+                [19.28018, 72.8654],
+                {}
+            ).addTo(map_9ebadacf2cc56f239835d476901d5c6a);
+        
+    
+            var icon_c1fe076de5a48e17b9228323d66f3243 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_452b2914128dfaa42ddd1ffa0faf43d8.setIcon(icon_c1fe076de5a48e17b9228323d66f3243);
+        
+    
+        var popup_775546ddf22a65e4d69c0ec28d9fb35e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9fdb90e5f40a39f26ad6f526b76ff589 = $(`<div id="html_9fdb90e5f40a39f26ad6f526b76ff589" style="width: 100.0%; height: 100.0%;">                 <b>Isha Clinic</b><br>                 Type: Doctor<br>                 Distance: 8.4 km<br>                 Address: Isha Clinic, Brahmakumari Marg, Shanti Park, Mira Road East, Mira Bhayander 401107, India<br>             </div>`)[0];
+                popup_775546ddf22a65e4d69c0ec28d9fb35e.setContent(html_9fdb90e5f40a39f26ad6f526b76ff589);
+            
+        
+
+        marker_452b2914128dfaa42ddd1ffa0faf43d8.bindPopup(popup_775546ddf22a65e4d69c0ec28d9fb35e)
+        ;
+
+        
+    
+</script>
+</html>
