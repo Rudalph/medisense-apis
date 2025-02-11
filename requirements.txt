@@ -22,4 +22,5 @@ chromadb
 langchain-chroma
 protobuf==3.20.*
 folium
+geopy
 
