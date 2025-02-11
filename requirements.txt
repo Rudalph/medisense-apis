@@ -24,4 +24,6 @@ protobuf==3.20.*
 folium
 geopy
 langchain-huggingface
+langchain-groq
+
 
