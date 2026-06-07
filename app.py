@@ -8,10 +8,10 @@ CORS(app)
 
 # BELOW ROUTES ARE OF PRESCRIPTION ANALYZER
  
-from prescription_Analyzer.prescription import prescription
-@app.route('/brand', methods=['POST'])
-def get_brand_details():
-    return prescription()
+# from prescription_Analyzer.prescription import prescription
+# @app.route('/brand', methods=['POST'])
+# def get_brand_details():
+#     return prescription()
 
 from prescription_Analyzer.pharmacy_location import pharmacy_location
 @app.route('/find_medical_facilities', methods=['POST'])

@@ -8,7 +8,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-groq_api_key="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"
+groq_api_key="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"
 
 
 def recommendations_on_parameters(question):

@@ -8,7 +8,7 @@ from langchain.chains.summarize import load_summarize_chain
 
 
 
-groq_api_key="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"
+groq_api_key="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"
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2" )
 llm=ChatGroq(groq_api_key=groq_api_key,model_name="llama-3.1-8b-instant", temperature=0.5)
 

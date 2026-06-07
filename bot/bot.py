@@ -16,9 +16,9 @@ from langchain_groq import ChatGroq
 from groq import Groq
 
 
-groq_api_key="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"
+groq_api_key="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"
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2" )
-llm=ChatGroq(groq_api_key=groq_api_key,model_name="llama-3.1-8b-instant", temperature=0.5)
+llm=ChatGroq(groq_api_key=groq_api_key,model_name="llama-3.1-8b-instant", temperature=0.3)
 
 
 def saviour(req, answer1):
@@ -54,7 +54,7 @@ def saviour(req, answer1):
 
 
 
-# directory="./Data"
+# directory="./data"
 
 # loader = PyPDFDirectoryLoader(directory)   
 # documents = loader.load()
@@ -62,13 +62,14 @@ def saviour(req, answer1):
 
 # text_splitter = CharacterTextSplitter(
 #     separator=".",
-#     chunk_size=4000,
-#     chunk_overlap=3000,
+#     chunk_size=200,
+#     chunk_overlap=100,
 #     length_function=len,
 #     is_separator_regex=False,
 # )
 # print(text_splitter)
 # pages = loader.load_and_split(text_splitter)
+# print(pages)
 
 # vectordb = Chroma.from_documents(pages, embeddings, persist_directory="./chroma_db")
 

@@ -4,17 +4,15 @@ from flask import jsonify
 
 
 
-NEO4J_URI='neo4j+s://7de6eab3.databases.neo4j.io'
-NEO4J_USERNAME='neo4j'
-NEO4J_PASSWORD='6oXiX1VnIBQrjqz0wTCXpV9pc27pZo-eVKzuCOEHeoA'
-AURA_INSTANCEID='7de6eab3'
-AURA_INSTANCENAME='Instance01'
+NEO4J_URI="neo4j+s://21cbabd1.databases.neo4j.io"
+NEO4J_USERNAME="21cbabd1"
+NEO4J_PASSWORD="JS_wZzKRR-B_dyOC__aY7_y43dMkCgKDTzqqJt_CCJA"
 
-
-graph=Neo4jGraph(
-    url=NEO4J_URI,
-    username=NEO4J_USERNAME,
-    password=NEO4J_PASSWORD,
+graph = Neo4jGraph(
+url=NEO4J_URI,
+username=NEO4J_USERNAME,
+password=NEO4J_PASSWORD,
+database="21cbabd1"
 )
 
 
